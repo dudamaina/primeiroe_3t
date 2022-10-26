@@ -57,10 +57,10 @@ function calcula(){
     for(let m=1; m <=t;m++){
         let res = val * (1+(j/100));
         val = res;
-        document.write("Mês" + m +" = " + res + "<br>" );
+        //document.write("Mês" + m +" = " + moeda(res)+ "<br>" );
     }
-
-    document.write("Resultado: "+res);
+    document.getElementById("total").innerHTML="Total: " + moeda(res);
+    //document.write("Resultado: "+moeda(res));
 }
 
 function somaNota(){
@@ -69,5 +69,9 @@ function somaNota(){
     let n3 = document.getElementById("t3").value;
     let r = Number(n1) + Number(n2) + Number(n3);
     document.getElementById("resultado").innerHTML = "soma: " + r;
+
+}
+function moeda(atual){
+    return atual.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
 
 }

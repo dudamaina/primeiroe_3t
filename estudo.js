@@ -55,7 +55,7 @@ function calcula(){
     }
     let res = val;
     for(let m=1; m <=t;m++){
-        let res = val * (1+(j/100));
+        res = val * (1+(j/100));
         val = res;
         //document.write("Mês" + m +" = " + moeda(res)+ "<br>" );
     }

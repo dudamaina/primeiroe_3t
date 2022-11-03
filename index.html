@@ -12,24 +12,16 @@
 <body>
     <div class="calculadora">
         <div id="psTotal">
-            <span id="total">Total: 0,00</span><br>
+            <span id="total"> 0,00</span><br>
         </div >
         valor: <input id="valor" placeholder="Capital" type="text"><br>
         Juros (mensal): <input id="juros" placeholder="% Juros" type="text"><br>
         Nr. Meses: <input id="meses" placeholder="tempo" type="text"><br>
-        <button id="btnCalc" onclick="calcula()"> Enviar </button><br>
-        <span>Mês a Mês</span>
-
+        <button id="go" onclick="calcula()"> Enviar </button><br>
+        <div class="spmes">
+        <span id="mes">Mês a Mês</span>
+        </div>
         <link rel="stylesheet" href="geral.css">
-
-        <br><br><br>
-        Nota 1: <input id="t1" type="text"><br>
-        Nota 2: <input id="t2" type="text"><br>
-        Nota 3: <input id="t3" type="text"><br>
-        <button onclick="somaNota()">Somar Notas</button><br>
-        <button onclick="somaNota()">Somar media</button><br>
-
-
     </div>
 </body>
 

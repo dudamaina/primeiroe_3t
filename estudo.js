@@ -54,23 +54,19 @@ function calcula(){
         return
     }
     let res = val;
+    let texto = "";
     for(let m=1; m <=t;m++){
         res = val * (1+(j/100));
         val = res;
+        texto += m + ": " + moeda(res) + "<br>";
         //document.write("Mês" + m +" = " + moeda(res)+ "<br>" );
     }
+    document.getElementById("mes").innerHTML=texto;
     document.getElementById("total").innerHTML="Total: " + moeda(res);
+
     //document.write("Resultado: "+moeda(res));
 }
 
-function somaNota(){
-    let n1 = document.getElementById("t1").value;
-    let n2 = document.getElementById("t2").value;
-    let n3 = document.getElementById("t3").value;
-    let r = Number(n1) + Number(n2) + Number(n3);
-    document.getElementById("resultado").innerHTML = "soma: " + r;
-
-}
 function moeda(atual){
     return atual.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
 

@@ -19,6 +19,19 @@ body {
     border-radius: 5px;
     padding: 5px;
 }
+.calcF {
+    display: none;
+}
+#calcFin{
+    display: none;
+}
+#calcFin:checked + .calculadora .calcF{
+    display: block;
+}
+.calculadora input:focus{
+    background: rgb(248, 236, 248);
+    color: black;
+}
 #go{
     background: rgb(32, 252, 142);
     margin-top: 20px;
@@ -35,4 +48,14 @@ body {
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 20px;
+}
+.spmes{
+    width: 100%;
+    background: rgb(50, 50, 201);
+    color: lightblue;
+    border-radius: 4px;
+    border-style: dashed;
+    border-color: white;
+    border-width: 2px;
+    margin-top: 10px;
 }
